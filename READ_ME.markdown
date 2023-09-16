@@ -23,9 +23,9 @@ Para implementar esta solução IoT, você precisará dos seguintes recursos:
 - A máquina em que esse tutorial foi gravado era um processador i5, HD-1tb, 8gb, GTX 750 ti
 
 ### Software:
-- Docker: Para criar e gerenciar containers.
-- Git: Para clonar o repositório do Fiware Descomplicado.
-- Fiware Descomplicado: Um repositório contendo os containers e configurações necessárias para a plataforma Fiware.
+- VMWare
+- Postman
+- Ubuntu-22.04.3
 
 ## Instruções de Uso
 
