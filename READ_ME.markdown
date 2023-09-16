@@ -1,5 +1,7 @@
 # README - Solução IoT com Ubuntu, Docker e Fiware
 
+
+
 Este README descreve uma solução de Internet das Coisas (IoT) baseada em uma máquina virtual Ubuntu, utilizando Docker e Fiware. A solução proposta envolve a criação de uma infraestrutura que permite a comunicação e o processamento de dados entre dispositivos IoT, um backend e um frontend para visualização e controle dos dados.
 
 ## Arquitetura Proposta
@@ -20,9 +22,7 @@ O frontend é a interface de usuário que permite aos usuários visualizar e con
 Para implementar esta solução IoT, você precisará dos seguintes recursos:
 
 ### Hardware:
-- Uma máquina virtual com Ubuntu instalado (pode ser em um servidor ou em um ambiente de desenvolvimento local).
-- Dispositivos IoT compatíveis com a plataforma Fiware para enviar dados.
-- Conexão à Internet para comunicação com os serviços externos.
+- A máquina em que esse tutorial foi gravado era um processador i5, HD-1tb, 8gb, GTX 750 ti
 
 ### Software:
 - Docker: Para criar e gerenciar containers.
@@ -31,7 +31,7 @@ Para implementar esta solução IoT, você precisará dos seguintes recursos:
 
 ## Instruções de Uso
 
-Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Docker e Fiware:
+Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Docker e Fiware em adição:
 
 1. **Instalar o ifconfig para identificar o IP da máquina virtual:**
 - sudo apt-get install net-tools
@@ -42,7 +42,7 @@ Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Doc
 3. **Instalar o git**
 - sudo apt install git
 
-4. **Instale o docker(apenas o primeiro passo no site | ilustrado do 5. até 11.)**
+4. **Instale o docker(apenas o primeiro do site | ilustrado do 5. até 11.)**
 - (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 
 5. **Primeiro, atualize sua lista existente de pacotes:**
@@ -69,11 +69,24 @@ Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Doc
 12. **Copiar os arquivos do repositório de Fiware Descomplicado**
 - git clone https://github.com/fabiocabrini/fiware
 
-13. **Entrar na pasta do Fiware**
+13. **Entrar na pasta do Fiware[Colocar Codigo]**
 - cd fiware
 
-14. **Rodar os containers**
+14. **Rodar os containers[Colocar Codigo]**
 - sudo docker compose up -d
 
-15. **status dos containers**
+15. **status dos containers[Colocar Codigo]**
 - sudo docker stats
+
+16. **faça o download desse arquivo**
+- (github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json)
+
+17. **Entrar em myWorkspace**
+- importe o arquivo do passo 16.
+
+18. **Clique em Health Check e reabra o terminal[Colocar Codigo]**
+- ifconfig
+- encontre a linha inet xxx.xxx.x.xx(copie esse numero(os 'x'))
+
+19. **Substitua( {{url}} ) do get em Health Check pelo copiado**
+- Repita em IOT Agent MQTT, Orion Context Broker e STH-Comet
