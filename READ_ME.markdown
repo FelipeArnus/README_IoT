@@ -42,7 +42,7 @@ Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Doc
 3. **Instalar o git**
 - sudo apt install git
 
-4. **Instale o docker**
+4. **Instale o docker(apenas o primeiro do site | ilustrado do 5. até 11.)**
 - (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 
 5. **Primeiro, atualize sua lista existente de pacotes:**
@@ -77,4 +77,3 @@ Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Doc
 
 15. **status dos containers**
 - sudo docker stats
-
