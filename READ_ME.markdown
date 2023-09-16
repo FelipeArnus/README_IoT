@@ -1,7 +1,5 @@
 # README - Solução IoT com Ubuntu, Docker e Fiware
 
-
-
 Este README descreve uma solução de Internet das Coisas (IoT) baseada em uma máquina virtual Ubuntu, utilizando Docker e Fiware. A solução proposta envolve a criação de uma infraestrutura que permite a comunicação e o processamento de dados entre dispositivos IoT, um backend e um frontend para visualização e controle dos dados.
 
 ## Arquitetura Proposta
@@ -90,3 +88,5 @@ Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Doc
 
 19. **Substitua( {{url}} ) do get em Health Check pelo copiado**
 - Repita em IOT Agent MQTT, Orion Context Broker e STH-Comet
+
+
