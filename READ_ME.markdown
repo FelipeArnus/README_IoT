@@ -33,4 +33,48 @@ Para implementar esta solução IoT, você precisará dos seguintes recursos:
 
 Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Docker e Fiware:
 
-1. **Atualizar o sistema:**
+1. **Instalar o ifconfig para identificar o IP da máquina virtual:**
+- sudo apt-get install net-tools
+
+2. **Comando para ler o IP da VM (Virtual Machine):**
+ - ifconfig
+
+3. **AInstalar o git**
+- sudo apt install git
+
+4. **Instale o docker**
+- (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
+
+5. **Primeiro, atualize sua lista existente de pacotes:**
+- sudo apt update 
+
+6. **Pacotes de pré-requisitos que permitem aptusar pacotes via HTTPS:**
+- sudo apt install apt-transport-https ca-certificates curl software-properties-common 
+
+7. **Adicionar a chave GPG do repositório oficial do Docker ao seu sistema:**
+- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+8. **Adicionar o repositório Docker às fontes APT:**
+- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+9. **Certifique-se de instalar a partir do repositório Docker em vez do repositório padrão do Ubuntu:**
+- apt-cache policy docker-ce
+
+10. **Instale o Docker**
+- sudo apt install docker-ce
+
+11. **Verificação se o docker esta ativo**
+- sudo systemctl status docker
+
+12. **Copiar os arquivos do repositório de Fiware Descomplicado**
+- git clone https://github.com/fabiocabrini/fiware
+
+13. **Entrar na pasta do Fiware**
+- cd fiware
+
+14. **Rodar os containers**
+- sudo docker compose up -d
+
+15. **status dos containers**
+- sudo docker stats
+
