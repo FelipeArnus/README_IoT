@@ -39,7 +39,7 @@ Siga os passos abaixo para configurar e executar a solução IoT com Ubuntu, Doc
 2. **Comando para ler o IP da VM (Virtual Machine):**
  - ifconfig
 
-3. **AInstalar o git**
+3. **Instalar o git**
 - sudo apt install git
 
 4. **Instale o docker**
